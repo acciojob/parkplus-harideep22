@@ -10,11 +10,11 @@ public class ParkingLot {
     public ParkingLot() {
     }
 
-    public ParkingLot(int id, String name, String address, List<Spot> spotlist) {
+    public ParkingLot(int id, String name, String address, List<Spot> spotList) {
         this.id = id;
         this.name = name;
         this.address = address;
-        this.spotlist = spotlist;
+        this.spotList = spotList;
     }
 
     public int getId() {
@@ -41,12 +41,12 @@ public class ParkingLot {
         this.address = address;
     }
 
-    public List<Spot> getSpotlist() {
-        return spotlist;
+    public List<Spot> getSpotList() {
+        return spotList;
     }
 
-    public void setSpotlist(List<Spot> spotlist) {
-        this.spotlist = spotlist;
+    public void setSpotList(List<Spot> spotList) {
+        this.spotList = spotList;
     }
 
     @Id
@@ -55,7 +55,7 @@ public class ParkingLot {
     private String name;
     private String address;
     @OneToMany(mappedBy = "parkingLot",cascade = CascadeType.ALL)
-    private List<Spot> spotlist=new ArrayList<>();
+    private List<Spot> spotList=new ArrayList<>();
 
 
 }

@@ -46,7 +46,7 @@ public class ReservationServiceImpl implements ReservationService {
         catch (Exception e){
             throw new Exception("Cannot make reservation");
         }
-        List<Spot> spotList=parkingLot.getSpotlist();
+        List<Spot> spotList=parkingLot.getSpotList();
         if(spotList.size()==0){
             throw new Exception("Cannot make reservation");
         }

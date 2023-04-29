@@ -30,7 +30,7 @@ public class UserServiceImpl implements UserService {
         User user=new User();
         user.setName(name);
         user.setPassword(password);
-        user.setPhoneNummber(phoneNumber);
+        user.setPhoneNumber(phoneNumber);
 
         userRepository4.save(user);
     }
